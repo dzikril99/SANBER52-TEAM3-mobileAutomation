@@ -16,3 +16,7 @@ Verify User Is Logged In
 Click book Button On Home Page
      Wait Until Element Is Visible      ${signIn_button_homePage}
      Click Element                      ${book_button_homePage}
+
+Click Search Button on Home page
+    Wait Until Element Is Visible       ${signIn_button_homePage}
+    Click Element                       ${search_button_homePage}
