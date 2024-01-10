@@ -19,6 +19,7 @@ Verify Login Appears
 
 Input User Email On Login Page
     [Arguments]   ${email}
+    Wait Until Element Is Visible    ${email_input_user}
     Input Text    ${email_input_user}    ${email}
 
 Input User Password On Login Page

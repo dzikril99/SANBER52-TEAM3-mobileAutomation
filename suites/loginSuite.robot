@@ -17,7 +17,7 @@ ${BLANK_PASSWORD}
 
 
 
-* Test Cases *
+*** Test Cases ***
 
 Login with valid credentials
     # Step 1: Open application

@@ -27,11 +27,13 @@ Select From City
 
 Select To City
    Wait Until Element Is Visible    ${to_city_dropdown}
+   Wait Until Page Contains Element    ${to_city_dropdown}
    Click Element    ${to_city_dropdown}
    Wait Until Element Is Visible    ${ListView}
    Click Element    ${London}
 
 Select Class
+    Wait Until Element Is Visible    ${class_dropdown}
     Click Element    ${class_dropdown}
     Wait Until Element Is Visible    ${ListView}
     Click Element    ${First}
@@ -69,4 +71,5 @@ Click Price
     Click Confirm Button
 
 Verify Success Book
+    Wait Until Element Is Visible  ${TextView} 
     Element Should Contain Text    ${TextView}    Your flight is booked
