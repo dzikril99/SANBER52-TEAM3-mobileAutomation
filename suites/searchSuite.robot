@@ -75,4 +75,3 @@ Search for Booked Tickets with emoticon
     Input flight number using the emoticon    ${invalid_flight_emoticon}
         # Step 4 : Click search button
     Click search button
-    
