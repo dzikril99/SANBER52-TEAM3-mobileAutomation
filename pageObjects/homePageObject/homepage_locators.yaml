@@ -2,4 +2,4 @@ Logo_homePage : '//android.widget.ImageView[@resource-id="com.example.myapplicat
 signIn_button_homePage: '//android.widget.Button[@resource-id="com.example.myapplication:id/login"]'
 userName_text_homePage: '//android.widget.TextView[@resource-id="com.example.myapplication:id/textView"]'
 book_button_homePage : '//android.widget.Button[@resource-id="com.example.myapplication:id/book"]'
-search_button_homePage : '//android.widget.Button[@resource-id="com.example.myapplication:id/button6" and @text="Search"]'
+search_button_homePage : '//android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]'
