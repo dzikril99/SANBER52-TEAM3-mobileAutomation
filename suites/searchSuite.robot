@@ -16,6 +16,8 @@ ${invalid_flight_simbol}
 
 *** Test Cases ***
 
+#Positive Case
+
 Search for Booked Tickets with Valid Number
         # Step 1 : Click button search on home page
     Click Search Button on Home page
@@ -28,6 +30,9 @@ Search for Booked Tickets with Valid Number
         # Step 5 : Verify the booked tickets list page
     Verify the booked tickets list page
 
+
+#Negative Case
+
 Search for Booked Tickets with Invalid Number
         # Step 1 : Click button search on home page
     Click Search Button on Home page
@@ -36,7 +41,6 @@ Search for Booked Tickets with Invalid Number
         # Step 3 : Input valid fligt number
     Input invalid flight number    ${INVALID_FLIGHT-NUMBER}
         # Step 4 : Click search button
-    Click search button 
 
 Search for Booked Tickets with Blank Number
     # Step 1 : Click button search on home page
@@ -45,7 +49,6 @@ Search for Booked Tickets with Blank Number
     Verify search page appears
         # Step 3 : Click search button
     Click search button
-        
 Search for Booked Tickets with alphabetically
     # Step 1 : Click button search on home page
     Click Search Button on Home page
@@ -75,3 +78,4 @@ Search for Booked Tickets with emoticon
     Input flight number using the emoticon    ${invalid_flight_emoticon}
         # Step 4 : Click search button
     Click search button
+
