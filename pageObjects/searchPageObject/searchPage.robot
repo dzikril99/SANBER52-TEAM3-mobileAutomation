@@ -23,6 +23,19 @@ Input invalid flight number
     [Arguments]    ${INVALID_FLIGHT-NUMBER}
     Input Text    ${numberFlight_input}    ${INVALID_FLIGHT-NUMBER}
 
+Input flight number using the alphabet
+    [Arguments]    ${invalid_fligt_alphabet}
+    Input Text    ${numberFlight_input}    ${invalid_fligt_alphabet}
+
+Input flight number using the simbol
+    [Arguments]    ${invalid_flight_simbol}
+    Input Text    ${numberFlight_input}    ${invalid_flight_simbol}
+
+Input flight number using the emoticon
+    [Arguments]    ${invalid_flight_emoticon}
+    Input Text    ${numberFlight_input}    ${invalid_flight_emoticon}
+
+
 Click search button
     Click Element    ${search_button}
 

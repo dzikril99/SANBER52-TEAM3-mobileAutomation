@@ -9,6 +9,11 @@ Test Setup       Run Keywords
 ...              Open Flight Application 
 ...              Login With Valid Credentials
 
+*** Variables ***
+${invalid_flight_emoticon}    
+${invalid_fligt_alphabet}    
+${invalid_flight_simbol}    
+
 *** Test Cases ***
 
 #Positive Case
@@ -36,9 +41,7 @@ Search for Booked Tickets with Invalid Number
         # Step 3 : Input valid fligt number
     Input invalid flight number    ${INVALID_FLIGHT-NUMBER}
         # Step 4 : Click search button
-    Click search button
-        
-    
+
 Search for Booked Tickets with Blank Number
     # Step 1 : Click button search on home page
     Click Search Button on Home page
@@ -46,5 +49,34 @@ Search for Booked Tickets with Blank Number
     Verify search page appears
         # Step 3 : Click search button
     Click search button
+branchSony  
+Search for Booked Tickets with alphabetically
+    # Step 1 : Click button search on home page
+    Click Search Button on Home page
+        # Step 2 : Verify search page appears
+    Verify search page appears
+        # Step 3 : Input flight number using the alphabet
+    Input flight number using the alphabet    ${invalid_fligt_alphabet}
+        # Step 4 : Click search button
+    Click search button
 
-        
+Search for Booked Tickets with simbol
+    # Step 1 : Click button search on home page
+    Click Search Button on Home page
+        # Step 2 : Verify search page appears
+    Verify search page appears
+        # Step 3 : Input flight number using the simbol
+    Input flight number using the simbol    ${invalid_flight_simbol}
+        # Step 4 : Click search button
+    Click search button
+
+Search for Booked Tickets with emoticon
+    # Step 1 : Click button search on home page
+    Click Search Button on Home page
+        # Step 2 : Verify search page appears
+    Verify search page appears
+        # Step 3 : Input flight number using the emoticon
+    Input flight number using the emoticon    ${invalid_flight_emoticon}
+        # Step 4 : Click search button
+    Click search button
+main
